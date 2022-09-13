@@ -66,3 +66,39 @@ divmod(5, 3)
 print('a','b') # print함수는 , 를 한 칸 공백이 디폴트로 설정
 
 print('a','b',sep =',') # sep 파라미터로 구분자를 콤마(,)로 지정
+
+# 리스트를 출력할때는 join()으로 묶어서 출력한다.
+a = ['a', 'b']
+a
+print(a)
+print(''.join(a))
+
+# idx 값에 1을 더해서 fruit와 함께 출력하는 방법
+idx = 1
+fruit = 'apple'
+
+print('{0} : {1}'.format(idx + 1, fruit))
+print('{} : {}'.format(idx + 1, fruit))
+
+#f-string ( python3.6+ 에서만 지원한다는 점 유의하기)
+print(f'{idx+1} : {fruit}')
+
+# pass
+# python에서 pass는 널 연산으로 아무것도 하지 않는 기능이다.
+class myclass(object):
+    def method_a(self):
+
+    def method_b(self):
+        print("method")
+
+c = myclass()
+# method_a()가 아무런 처리를 하지 않아 오류가 발생한다 이럴때 pass를 사용하면 편리하다.
+
+class myclass(object):
+    def method_a(self):
+        pass
+    def method_b(self):
+        print("method")
+
+
+c = myclass()
