@@ -100,5 +100,19 @@ class myclass(object):
     def method_b(self):
         print("method")
 
-
 c = myclass()
+
+# 파이썬 자료형
+# 매핑 -> 딕셔너리 {}
+# 시퀀스 - 불변 -> 튜플
+#        - 가변 -> 리스트
+
+# set : 집합 자료형 (중복된 값을 갖지 않는다.)
+a = {'a', 'b', 'c', 'a'}
+a
+type(a)
+# dict : 키 : 값 형태 (중복된 값을 갖지 않는다. 중복됐다면 마지막 값을 출력 한다.)
+b = {'a':'A', 'b':'B', 'c':'C', 'b':"A"}
+b
+type(b)
+
